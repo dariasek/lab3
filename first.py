@@ -20,7 +20,7 @@ def preprocess_input(input_string,w,h,n):
         index+=2
     return list_digit_arrays
 
-
+@asyncio.coroutine
 async def get_numbers   (w,h,p=0.2,n_steps=1,mode='off'):
     uri = "wss://sprs.herokuapp.com/first/rot"  
     async with websockets.connect(uri) as websocket:
