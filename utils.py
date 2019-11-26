@@ -144,3 +144,9 @@ def sum_digits(number):
         digits_sum += number % 10
         number //= 10
     return digits_sum
+
+def generate_histogram(n):
+    """generate histogram of length n"""
+    generated_seq = np.random.rand(n)
+    return (generated_seq/np.sum(generated_seq))
+   
