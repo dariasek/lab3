@@ -76,15 +76,15 @@ def generate_noised_images_list(width,height,ethalon_matrices_list,p):
     Returns:
         noised_images - a list of a noised matrices, length tha same as in the 'ethalon_matrices_list'
     >>> generate_noised_images_list(1,1,[[1]],0)
-    [array([[0]], dtype=int32)]
+    [array([[0]])]
     >>> generate_noised_images_list(1,1,[[0]],0)
-    [array([[1]], dtype=int32)]
+    [array([[1]])]
     >>> generate_noised_images_list(1,2,[[1,1]],0)
-    [array([[0, 0]], dtype=int32)]
+    [array([[0, 0]])]
     >>> generate_noised_images_list(1,2,[[0,0]],0)
-    [array([[1, 1]], dtype=int32)]
+    [array([[1, 1]])]
     >>> generate_noised_images_list(1,2,[[0,1]],0)
-    [array([[1, 0]], dtype=int32)]
+    [array([[1, 0]])]
     """
     noised_images = list()
     for matrix in ethalon_matrices_list:
